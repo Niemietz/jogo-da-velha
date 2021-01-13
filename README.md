@@ -1,5 +1,5 @@
 # Jogo da Velha (Java)
-Jogo da Velha feito na linguagem Java utilizando IntelliJ IDEA, para ser jogado via terminal / prompt de comando.
+Jogo da Velha feito na linguagem Java utilizando [IntelliJ IDEA](https://www.jetbrains.com/idea/), para ser jogado via terminal / prompt de comando.
 
 ### Compilar:
 `$ javac src/com/niemietz/JogoDaVelha.java` 
