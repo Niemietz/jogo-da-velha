@@ -77,6 +77,8 @@ public class JogoDaVelha {
             exibirJogoDesenhado(campo);
             System.out.println("Xiii, deu velha! :/");
         }
+
+        scanner.nextLine();
     }
 
     /**
