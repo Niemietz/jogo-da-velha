@@ -40,6 +40,7 @@ public class JogoDaVelha {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        int jogadas = 0;
         int vitorioso = -1;
         int[][] campo = {{-1, -1, -1}, {-1, -1, -1}, {-1, -1, -1}};
         int vez = x;
@@ -61,8 +62,9 @@ public class JogoDaVelha {
             if (proximoJogador > -1) {
                 vitorioso = verificarVitoria(campo, condicoesVitoria);
                 vez = proximoJogador;
+                jogadas++;
             }
-        } while (vitorioso == -1);
+        } while (vitorioso == -1 && jogadas < 9);
 
         if (vitorioso > -1) {
             exibirJogoDesenhado(campo);
@@ -71,6 +73,9 @@ public class JogoDaVelha {
             } else {
                 System.out.println("Vitória do O!");
             }
+        } else if (jogadas == 9) {
+            exibirJogoDesenhado(campo);
+            System.out.println("Xiii, deu velha! :/");
         }
     }
 
